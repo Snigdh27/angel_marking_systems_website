@@ -1,0 +1,50 @@
+#cardSlider {
+    --f-carousel-slide-width: 100%;
+    --f-carousel-spacing: 0;
+    --f-carousel-slide-padding: 0 1rem;
+  
+    --f-button-prev-pos: 5rem;
+    --f-button-next-pos: 5rem;
+  
+    --f-button-bg: #fff;
+    --f-button-color: #333;
+  
+    --f-button-width: 48px;
+    --f-button-height: 48px;
+    --f-button-border-radius: 50%;
+  
+    --f-button-svg-width: 27px;
+    --f-button-svg-height: 27px;
+    --f-button-svg-stroke-width: 1.5;
+  
+    --f-button-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(106, 77, 77, 0.06) 0px 2px 4px -1px;
+  }
+  
+  @media screen and (min-width: 640px) {
+    #cardSlider {
+      --f-carousel-slide-width: calc(100% / 3);
+    }
+  }
+
+  .card_container {
+    background-color: #fff !important;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card_image {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  
+  

@@ -1,0 +1,60 @@
+.contact-form-container {
+  width: 100%;
+  background-color: #2c2b2b; /* Light background color */
+  padding: 50px 20px; /* Spacing around the form */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: #ffffff; /* White form background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 30px; /* Internal padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 500px; /* Restrict form width */
+  width: 100%;
+  font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #343a40; /* Dark color for heading */
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+textarea.form-control {
+  resize: none; /* Disable resizing */
+  height: 100px; /* Set default height */
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d7a449;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: rgb(66, 49, 13); /* Darker blue on hover */
+}

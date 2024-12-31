@@ -1,0 +1,241 @@
+
+.about-section{
+	position:relative;
+	padding:35px 0px;
+}
+
+.about-section .content-column{
+	position:relative;
+	margin-bottom:40px;
+}
+
+.about-section .content-column .inner-column{
+	position:relative;
+}
+
+.about-section .content-column .text{
+	position:relative;
+	color:#777777;
+	font-size:15px;
+	line-height:2em;
+	margin-bottom:40px;
+}
+
+.about-section .content-column .email{
+	position:relative;
+	color:#252525;
+	font-weight:700;
+	margin-bottom:50px;
+}
+
+.about-section .image-column{
+	position: relative;
+    margin-bottom: 50px;
+}
+
+.about-section .image-column .inner-column{
+	position:relative;
+	padding:40px 40px 0px 0px;
+	margin-left:50px;
+}
+
+.about-section .image-column .inner-column:after{
+	position:absolute;
+	content:'';
+	right:0px;
+	top:0px;
+	left:40px;
+	bottom:100px;
+	z-index:-1;
+	border:2px solid #d7a449;
+}
+
+.about-section .image-column .inner-column .image{
+	position:relative;
+}
+
+.about-section .image-column .inner-column .image:before{
+	position:absolute;
+	content:'';
+	left:-53px;
+	bottom:-50px;
+	width:299px;
+	height:299px;
+	background:url(../../assets/cover.jpg) no-repeat;
+}
+
+.about-section .image-column .inner-column .image img{
+	position:relative;
+	width:100%;
+	display:block;
+}
+
+.about-section .image-column .inner-column .image .overlay-box{
+	position:absolute;
+	left:40px;
+	bottom:48px;
+}
+
+.about-section .image-column .inner-column .image .overlay-box .year-box{
+    position: relative;
+    color: #252525;
+    background-color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4em;
+    padding-left: 140px;
+}
+
+.about-section .image-column .inner-column .image .overlay-box .year-box .number{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 130px;
+    height: 67px;
+    color: #d7a449;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.about-section .btn-style-three:before {
+    position: absolute;
+    content: '';
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+    right: -10px;
+    bottom: -10px;
+    background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
+}
+.about-section .btn-style-three:hover {
+    color: #ffffff;
+    background: #d7a449;
+}
+.about-section .btn-style-three {
+    position: relative;
+    line-height: 24px;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 700;
+    background: none;
+    display: inline-block;
+    padding: 11px 40px;
+    background-color: #ffffff;
+    text-transform: capitalize;
+    border: 2px solid #d7a449;
+    font-family: 'Arimo', sans-serif;
+}
+.sec-title2{
+	color:#fff;
+}
+.sec-title {
+    position: relative;
+}
+.sec-title .title {
+    position: relative;
+    color: #d7a449;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.sec-title .title:before {
+    position: absolute;
+    content: '';
+    right: 0px;
+    bottom: 7px;
+    width: 40px;
+    height: 1px;
+}
+
+@media (max-width: 768px) {
+    .about-section .container {
+        padding: 0 15px; /* Add padding inside the container */
+    }
+
+    .about-section .row {
+        display: flex;
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center;
+    }
+
+    .about-section .content-column,
+    .about-section .image-column {
+        max-width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center-align content */
+    }
+
+    .about-section .content-column .inner-column {
+        margin-bottom: 20px;
+    }
+
+    .about-section .image-column .inner-column {
+        margin-left: 0; /* Remove margin for alignment */
+    }
+
+    .about-section .image-column .inner-column:after {
+        left: 10px; /* Adjust position */
+        top: 10px;
+        bottom: 50px;
+        right: 10px;
+    }
+
+    .about-section .image-column .inner-column .image:before {
+        left: 0px;
+        bottom: -30px;
+        width: 250px;
+        height: 250px; /* Resize the decorative image */
+    }
+
+    .about-section .image-column .inner-column .image img {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .about-section .image-column .inner-column .image .overlay-box {
+        left: 0; /* Center overlay */
+        bottom: 20px;
+    }
+
+    .about-section .image-column .inner-column .image .overlay-box .year-box {
+        font-size: 20px; /* Adjust text size */
+        padding-left: 120px; /* Adjust padding */
+    }
+
+    .about-section .image-column .inner-column .image .overlay-box .year-box .number {
+        font-size: 50px; /* Adjust number size */
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section .content-column .text {
+        font-size: 13px; /* Even smaller font for extra small screens */
+        line-height: 1.6em;
+    }
+
+    .about-section .image-column .inner-column .image:before {
+        display: none; /* Hide decorative image on very small screens */
+    }
+
+    .about-section .image-column .inner-column .image .overlay-box {
+        bottom: 10px;
+    }
+
+    .about-section .image-column .inner-column .image .overlay-box .year-box {
+        padding-left: 100px; /* Further adjust padding */
+        font-size: 18px;
+    }
+
+    .about-section .image-column .inner-column .image .overlay-box .year-box .number {
+        font-size: 40px;
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+    }
+}

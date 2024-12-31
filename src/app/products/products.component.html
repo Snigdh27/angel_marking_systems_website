@@ -1,0 +1,17 @@
+<div class="max-w-6xl mx-auto">
+    <div id="cardSlider" class="mb-8 py-10 f-carousel bg-gray-50">
+      <div class="f-carousel__viewport px-12">
+         <figure class="f-carousel__slide" *ngFor="let slide of slides">
+            <div class="card_container">
+                <div class="card_header">
+                    <img [src]="slide.img" alt="card-image" class="card_image" width="300" height="330"/>
+                </div>
+                <div class="card_body">
+                  <p style="text-align: center; font-weight: bold;">{{slide.name}}</p>
+                </div>
+              </div>
+        </figure> 
+      </div>
+    </div>
+  </div>
+  
